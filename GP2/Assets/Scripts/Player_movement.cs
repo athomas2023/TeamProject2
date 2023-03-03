@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-  public CharacterController controller;
+public CharacterController controller;
   public float speed = 12f;
 
     // Update is called once per frame

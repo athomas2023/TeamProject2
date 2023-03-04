@@ -8,17 +8,22 @@ public class GuardMovement : MonoBehaviour
     public NavMeshAgent guard;
     public GameObject player;
     public int detectionRange = 5;
+
+    public int timeInvincible = 3;
+    private bool isActive;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isActive == true){
         if (Vector3.Distance(transform.position, player.transform.position) <= detectionRange){
         guard.SetDestination(player.transform.position);
+        }
         }
     }
 
@@ -28,7 +33,21 @@ public class GuardMovement : MonoBehaviour
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (other.gameObject.tag == "Player")
         {
-            player.GetComponent<PlayerHit>().KillPlayer();
+            if(isActive == true){
+            player.GetComponent<PlayerHealth>().TakeDamage();
+            StartCoroutine(Invincibility());
+            }
+
         }
     }
+
+    IEnumerator Invincibility()
+{
+        isActive = false;
+        Debug.Log("not active");
+        yield return new WaitForSeconds(timeInvincible);
+        isActive = true;
+        Debug.Log("active");
+    
+}
 }

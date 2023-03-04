@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_movement : MonoBehaviour
+public class Player_Movement : MonoBehaviour
 {
   public CharacterController controller;
   public float speed = 12f;
@@ -10,10 +10,19 @@ public class Player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis ("Horizontal");
-        float z = Input.GetAxis ("Vertical");
-
-        Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move(move * speed * Time.deltaTime);
+           if(Input.GetKey(KeyCode.W)) {
+             transform.position += transform.forward * Time.deltaTime * speed;
+         }
+         else if(Input.GetKey(KeyCode.S)) {
+             transform.position -= transform.forward * Time.deltaTime * speed;
+         }
+         else if(Input.GetKey(KeyCode.A)) {
+             transform.position -= transform.right * Time.deltaTime * speed;
+         }
+         else if(Input.GetKey(KeyCode.D)) {
+             transform.position += transform.right * Time.deltaTime * speed;
+         }
+         }
     }
-}
+
+

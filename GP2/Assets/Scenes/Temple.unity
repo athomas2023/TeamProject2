@@ -2137,6 +2137,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!136 &1146788687 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 3928043076835894480, guid: 272a9e0f83d0ab848a754c0e1bbdcbfd, type: 3}
+  m_PrefabInstance: {fileID: 1757093276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &1146788688 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 3928043076835894482, guid: 272a9e0f83d0ab848a754c0e1bbdcbfd, type: 3}
+  m_PrefabInstance: {fileID: 1757093276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146788690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146788675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9597dd5f38c1dec499d19a2a85ac85fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1146788688}
+  speed: 7
 --- !u!1 &1163539131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3100,6 +3124,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 829195233, guid: 272a9e0f83d0ab848a754c0e1bbdcbfd, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1146788687}
     - target: {fileID: 3928043076835894484, guid: 272a9e0f83d0ab848a754c0e1bbdcbfd, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3176,7 +3204,8 @@ PrefabInstance:
       propertyPath: healthCanvas2
       value: 
       objectReference: {fileID: 2016332170}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3928043076835894511, guid: 272a9e0f83d0ab848a754c0e1bbdcbfd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 272a9e0f83d0ab848a754c0e1bbdcbfd, type: 3}
 --- !u!1001 &1793282249
 PrefabInstance:

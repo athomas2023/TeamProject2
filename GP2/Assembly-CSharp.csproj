@@ -39,7 +39,7 @@
      <Compile Include="Assets\Scripts\GuardMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHit.cs" />
      <Compile Include="Assets\Scripts\Camera_Movement.cs" />
-     <Compile Include="Assets\Scripts\Player_Movement.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleMove.cs" />
      <Compile Include="Assets\Scripts\ItemDespawn.cs" />
      <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleEffectPackLightControl.cs" />
@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Mouse_Movement.cs" />
      <Compile Include="Assets\Scripts\ItemCollect.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Player_Movement.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

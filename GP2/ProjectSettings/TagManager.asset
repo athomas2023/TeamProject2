@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Gaurd
   - Item
+  - shields
+  - Treasure
   layers:
   - Default
   - TransparentFX

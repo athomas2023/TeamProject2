@@ -26,6 +26,7 @@ public class ItemDespawn : MonoBehaviour
             if(this.gameObject.tag == "shields"){
                 Debug.Log("collected shield");
                 player.GetComponent<PlayerHealth>().GainHealth();
+                player.GetComponent<PlayerHealth>().PlaySound();
             }
             
             gameObject.SetActive (false);

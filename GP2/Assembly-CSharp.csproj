@@ -37,19 +37,22 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GuardMovement.cs" />
+     <Compile Include="Assets\Scripts\pit_fall.cs" />
      <Compile Include="Assets\Scripts\PlayerHit.cs" />
      <Compile Include="Assets\Scripts\Camera_Movement.cs" />
-     <Compile Include="Assets\Scripts\Player_Movement.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleMove.cs" />
      <Compile Include="Assets\Scripts\ItemDespawn.cs" />
      <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleEffectPackLightControl.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\48 Particle Effect Pack\Script\csMouseOrbit.cs" />
-     <Compile Include="Assets\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\Dynamic_timer.cs" />
      <Compile Include="Assets\48 Particle Effect Pack\Script\csDestroyEffect.cs" />
      <Compile Include="Assets\Scripts\Mouse_Movement.cs" />
+     <Compile Include="Assets\Scripts\Player_Movement.cs" />
      <Compile Include="Assets\Scripts\ItemCollect.cs" />
-     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Timer_script.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

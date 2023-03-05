@@ -46,21 +46,11 @@ public class Timer_script : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+      
 
     }
 
-    IEnumerator LoadScene()
-    {
-
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(sceneName);
-
-
-    }
+    
 
 
 

@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject healthCanvas1;
     public GameObject healthCanvas2;
     public GameObject player;
+    public AudioSource source;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,12 +41,19 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+    public void PlaySound(){
+         source.PlayOneShot(clip, 1);
+
+    }
+
     public void TakeDamage(){
         playerHealth -= 1;
     }
 
     public void GainHealth(){
+        if(playerHealth < 3 ){
         playerHealth += 1;
+        }
     }
 
 

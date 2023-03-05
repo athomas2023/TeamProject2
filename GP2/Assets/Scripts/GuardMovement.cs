@@ -8,13 +8,17 @@ public class GuardMovement : MonoBehaviour
     public NavMeshAgent guard;
     public GameObject player;
     public int detectionRange = 5;
-
-    public int timeInvincible = 3;
+     public int timeInvincible = 3;
     private bool isActive;
+    public AudioSource aggroSound;
+    public AudioSource inactiveSound;
+    private bool isAggro;
+    
     // Start is called before the first frame update
     void Start()
     {
         isActive = true;
+        isAggro = false;
     }
 
     // Update is called once per frame
@@ -23,7 +27,22 @@ public class GuardMovement : MonoBehaviour
         if(isActive == true){
         if (Vector3.Distance(transform.position, player.transform.position) <= detectionRange){
         guard.SetDestination(player.transform.position);
+            isAggro = true;
         }
+        }
+
+
+        if(Vector3.Distance(transform.position, player.transform.position) > detectionRange){
+            isAggro = false;
+        }
+
+        if(isAggro == true){
+            inactiveSound.enabled = false;
+            aggroSound.enabled = true;
+        }
+        else if (isAggro == false){
+            inactiveSound.enabled = true;
+            aggroSound.enabled = false;
         }
     }
 

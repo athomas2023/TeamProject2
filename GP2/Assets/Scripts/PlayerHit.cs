@@ -20,5 +20,6 @@ public class PlayerHit : MonoBehaviour
     public void KillPlayer(){
         
         deathScreen.SetActive(true);
+        Time.timeScale = 0f;
     }
 }

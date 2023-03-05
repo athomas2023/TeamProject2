@@ -37,5 +37,12 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             } 
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+            Debug.Log("Quit");
+        }
     }
 }

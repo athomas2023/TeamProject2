@@ -26,6 +26,7 @@ public class Timer_script : MonoBehaviour
     {
         
         Timer_min.text = "";
+        Time.timeScale = 1f;
         
     }
 
